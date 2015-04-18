@@ -12,8 +12,8 @@ public class HorseWalkBehavior : StateMachineBehaviour {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		trans = animator.GetComponent<Transform> ();
-		trans.Translate(new Vector3(0,0,1.8f) * Time.deltaTime);
+		trans = animator.GetComponent <Transform> ();
+		trans.Translate (new Vector3 (0,0,1.8f) * Time.deltaTime);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

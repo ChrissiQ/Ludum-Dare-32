@@ -12,14 +12,10 @@ public class HorseMovement : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		rb = GetComponent <Rigidbody> ();
 		trans = GetComponent <Transform> ();
-		//rb.velocity = new Vector3 (0,0,20f);
+		anim.SetTrigger ("Walk");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		anim.SetTrigger ("Go");
-//		trans.Translate (new Vector3(0,0,1f));
-		//anim.ResetTrigger("Go");
+
+	void FixedUpdate() {
 	}
 }
 

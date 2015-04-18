@@ -10,8 +10,8 @@ public class HorseMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent <Animator> ();
-		rb = GetComponent <Rigidbody> ();
-		trans = GetComponent <Transform> ();
+//		rb = GetComponent <Rigidbody> ();
+//		trans = GetComponent <Transform> ();
 		anim.SetTrigger ("Walk");
 	}
 

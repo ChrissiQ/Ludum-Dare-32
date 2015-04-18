@@ -5,26 +5,30 @@ using System.Collections.Generic;
 public class GameController : MonoBehaviour {
 	
 	public int foliageCount;
-	public Transform foliage1;
-	public Transform foliage2;
-	List<Transform> foliage;
+	public GameObject foliage1;
+	public GameObject foliage2;
+	public GameObject foliageContainer;
+	List<GameObject> foliage;
 	float xsize = 50f;
 	float zsize = 50f;
 
-	void InstantiateRandom(List<Transform> transList) {
+	void InstantiateRandom(List<GameObject> objectList, GameObject parentGameObject) {
 		float x = Random.Range (0-xsize, xsize);
 		float z = Random.Range (0-xsize, zsize);
-		Transform trans = transList[Random.Range (0, transList.Count)];
-		Instantiate (trans, new Vector3(x,0f,z), Quaternion.identity);
+		GameObject gameObject = (GameObject) Instantiate (
+			objectList[Random.Range (0, objectList.Count)],
+			new Vector3(x,0f,z),
+			Quaternion.identity);
+		gameObject.transform.parent = parentGameObject.transform;
 	}
 
 	void InstantiateFoliage () {
-		InstantiateRandom (foliage);
+		InstantiateRandom (foliage, foliageContainer);
 	}
 
 	// Use this for initialization
 	void Start () {
-		foliage = new List<Transform> () {foliage1, foliage2};
+		foliage = new List<GameObject> () {foliage1, foliage2};
 		for (int i=0; i<foliageCount; i++) {
 			InstantiateFoliage();
 		}

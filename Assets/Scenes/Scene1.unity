@@ -259,8 +259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foliageCount: 1000
-  foliage1: {fileID: 454636, guid: ea5eb559049a6cf4d944ed92868f8929, type: 2}
-  foliage2: {fileID: 471740, guid: bae52f72d84a77847a5a6b7c8210b5c1, type: 2}
+  foliage1: {fileID: 195432, guid: ea5eb559049a6cf4d944ed92868f8929, type: 2}
+  foliage2: {fileID: 124400, guid: bae52f72d84a77847a5a6b7c8210b5c1, type: 2}
+  foliageContainer: {fileID: 1733861392}
 --- !u!1 &1320015779
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1733861392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1733861393}
+  m_Layer: 0
+  m_Name: FoliageContainer
+  m_TagString: FoliageContainer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733861393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1733861392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1001 &1850041323
 Prefab:
   m_ObjectHideFlags: 0

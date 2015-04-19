@@ -262,6 +262,8 @@ MonoBehaviour:
   foliage1: {fileID: 195432, guid: ea5eb559049a6cf4d944ed92868f8929, type: 2}
   foliage2: {fileID: 124400, guid: bae52f72d84a77847a5a6b7c8210b5c1, type: 2}
   foliageContainer: {fileID: 1733861392}
+  xsize: 50
+  zsize: 50
 --- !u!1 &1320015779
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +390,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11459896, guid: 936a3cf94092fcf4ba1853437c5fb065, type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 763563192}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 936a3cf94092fcf4ba1853437c5fb065, type: 2}
   m_IsPrefabParent: 0

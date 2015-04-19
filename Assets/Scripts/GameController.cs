@@ -13,18 +13,22 @@ public class GameController : MonoBehaviour {
 
 	List<GameObject> foliage;
 
-	void InstantiateRandom(List<GameObject> objectList, GameObject parentGameObject) {
+	public GameObject GetRandomFoliage () {
+		return foliageContainer.transform.GetChild (Random.Range (0, foliageContainer.transform.childCount-1)).gameObject;
+	}
+
+	void InstantiateRandom() {
 		float x = Random.Range (0-xsize, xsize);
 		float z = Random.Range (0-xsize, zsize);
 		GameObject gameObject = (GameObject) Instantiate (
-			objectList[Random.Range (0, objectList.Count)],
-			new Vector3(x,0f,z),
+			foliage[Random.Range (0, foliage.Count-1)],
+			new Vector3 (x, 0f, z),
 			Quaternion.identity);
-		gameObject.transform.parent = parentGameObject.transform;
+		gameObject.transform.parent = foliageContainer.transform;
 	}
 
 	void InstantiateFoliage () {
-		InstantiateRandom (foliage, foliageContainer);
+		InstantiateRandom ();
 	}
 
 	// Use this for initialization

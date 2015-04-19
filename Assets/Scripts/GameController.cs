@@ -8,9 +8,10 @@ public class GameController : MonoBehaviour {
 	public GameObject foliage1;
 	public GameObject foliage2;
 	public GameObject foliageContainer;
+	public float xsize = 50f;
+	public float zsize = 50f;
+
 	List<GameObject> foliage;
-	float xsize = 50f;
-	float zsize = 50f;
 
 	void InstantiateRandom(List<GameObject> objectList, GameObject parentGameObject) {
 		float x = Random.Range (0-xsize, xsize);
@@ -29,7 +30,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		foliage = new List<GameObject> () {foliage1, foliage2};
-		for (int i=0; i<foliageCount; i++) {
+		for (int i = 0; i < foliageCount; i++) {
 			InstantiateFoliage();
 		}
 	}

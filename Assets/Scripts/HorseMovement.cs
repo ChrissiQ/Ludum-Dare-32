@@ -21,4 +21,9 @@ public class HorseMovement : MonoBehaviour {
 			rb.transform.LookAt(target.transform);
 		}
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject == target.gameObject)
+			Destroy(other.gameObject);
+	}
 }

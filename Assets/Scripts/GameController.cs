@@ -5,13 +5,10 @@ using System.Collections.Generic;
 public class GameController : MonoBehaviour {
 	
 	public int foliageCount;
-	public GameObject foliage1;
-	public GameObject foliage2;
+	public List<GameObject> foliage;
 	public GameObject foliageContainer;
 	public float xsize = 50f;
 	public float zsize = 50f;
-
-	List<GameObject> foliage;
 
 	public GameObject GetRandomFoliage () {
 		return foliageContainer.transform.GetChild (Random.Range (0, foliageContainer.transform.childCount-1)).gameObject;
@@ -28,15 +25,13 @@ public class GameController : MonoBehaviour {
 	}
 
 	void InstantiateFoliage () {
-		InstantiateRandom ();
+		for (int i = 0; i < foliageCount; i++)
+			InstantiateRandom ();
 	}
 
 	// Use this for initialization
 	void Start () {
-		foliage = new List<GameObject> () {foliage1, foliage2};
-		for (int i = 0; i < foliageCount; i++) {
-			InstantiateFoliage();
-		}
+		InstantiateFoliage ();
 	}
 	
 	// Update is called once per frame

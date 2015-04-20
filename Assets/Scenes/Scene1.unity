@@ -259,8 +259,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foliageCount: 1000
-  foliage1: {fileID: 195432, guid: ea5eb559049a6cf4d944ed92868f8929, type: 2}
-  foliage2: {fileID: 124400, guid: bae52f72d84a77847a5a6b7c8210b5c1, type: 2}
+  foliage:
+  - {fileID: 195432, guid: ea5eb559049a6cf4d944ed92868f8929, type: 2}
+  - {fileID: 124400, guid: bae52f72d84a77847a5a6b7c8210b5c1, type: 2}
+  - {fileID: 100000, guid: 5ca99170bd118bca11002b7b44295342, type: 3}
+  - {fileID: 100000, guid: 0289fdf7bd118bca11002b7b44295342, type: 3}
   foliageContainer: {fileID: 1733861392}
   xsize: 50
   zsize: 50

@@ -9,7 +9,7 @@ This game is currently in a bad state - interactivity is not implemented.  This 
 
 ## How to play
 
-This game runs under Unity 5.0.  You can [download](http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=42789) the compiled version from the LD32 site.
+This game runs under Unity 5.0.  You can [download](http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=51199) the compiled version from the LD32 site.
 
 ## Resources
 

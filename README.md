@@ -13,5 +13,5 @@ This game runs under Unity 5.0.  You can [download](http://ludumdare.com/compo/l
 
 ## Resources
 
-Graphics: Unity Web Store
-Music: [Ludum Dare Free Songs by Abstraction from Soundcloud](https://soundcloud.com/abstraction/sets/ludum-dare-challenge)
+* Graphics: Unity Web Store
+* Music: [Ludum Dare Free Songs by Abstraction from Soundcloud](https://soundcloud.com/abstraction/sets/ludum-dare-challenge)

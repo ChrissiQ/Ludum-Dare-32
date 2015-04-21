@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Foliage
   - FoliageContainer
+  - MainCharacter
+  - PanicAudio
+  - HUD
+  - GameOver
   layers:
   - Default
   - TransparentFX
